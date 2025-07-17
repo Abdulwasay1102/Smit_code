@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasay._.Edits</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        
+      }
+      html, body{
+        height: 100%;
+        overflow-y: auto;
+      }
+      body{
+        /* background:linear-gradient(to right,#001f3f, #17416b) */
+        /* background:linear-gradient(135deg,#0f0c29,#302b63,#24243e); */
+        background:linear-gradient(135deg,#0d0d0d,#1a1a2e,#16213e);
+        height: 100vh;
+        /* font-family: Aeial,sans-serif; */
+        font-style: italic;
+      
+      }
+    
+    .nav{
+      position: sticky auto;
+        border: 2px solid ;
+        background-color: #2c3531;
+        height: 43px;
+        padding: 0px;
+        margin: 0px;
+        
+       /* position: relative; */
+       
+         }
+         .navtag{
+          position: sticky;
+          top: 0;
+          background-color: #2c3531;
+          z-index: 1000;
+          
+         }
+    .imglogo{
+        width: 35px;
+        object-fit: cover;
+        position: absolute;
+        border-radius: 100px;
+        left: 30px;
+        top: 3px;
+        box-shadow: -4px -3px 10px ;
+    }
+   div ul li{
+    list-style: none;
+   display: inline;
+   padding: 60px;
+
+   }
+   div ul li a{
+    text-decoration: none;
+    position: relative;
+    color:#D1E8E2;
+    left: 250px;
+    top: 12px;
+   }
+  .youtube{
+    color: red;
+    position: relative;
+    left: 85%;
+    top: -3px;
+    
+  }
+  .discord{
+    color:rebeccapurple;
+    position: relative;
+    left: 85%;
+    top: -3px;
+    margin-left: 20px;
+    
+  }
+  .facebook{
+    color:blue;
+    position: relative;
+    left: 85%;
+    top: -3px;
+    margin-left: 25px;
+    
+  }
+  .twitter{
+    color:#08a0e9;
+    position: relative;
+    left: 85%;
+    top: -3px;
+    margin-left: 30px;
+  }
+/* Nav Bar end here */
+/* Slide bar start here */
+.sidebar{
+  margin: 0px;
+  padding: 0px;
+  border: 2px solid #D9B08C;
+  background-color: #D9B08C;
+  position: fixed;
+  height: 590px;
+  width: 270px;
+  overflow: auto;
+  scrollbar-width: none;
+  
+}
+.sidebar a{
+  text-decoration: none;
+ font-size: medium;
+position: relative;
+top: 12px;
+left: 0px;
+text-align: center;
+font-weight: bold;
+color: #2c3531;
+line-height: 2;
+display: block;
+
+
+}
+.sidebar a:hover {
+  background-color: #116466;
+  color: #D1E8E2;
+}
+.nav a:hover {
+  color: #FFCB9A;
+}
+ /* Sidebar end here */
+ /* Main body start here */
+.boxmain{
+  height: 300px;
+  width: 95%;
+  /* border: 2px solid #D9B08C; */
+  margin-left: 60px;
+}
+.box1{
+  height: 300px;
+  width: 320px;
+  /* border: 2px solid #08a0e9; */
+  position: relative;
+  left: 240px;
+  top: 15px;
+  float: left;
+  /* box-shadow: 0 4px 10px rgba(0,0,0,0.3); */
+}
+.button1{
+  padding: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: #116466;
+  color: #D1E8E2;
+  background-color:#495f55;
+  border-radius: 100px 100px 0px 100px ;
+  position: absolute;
+  border: 1px solid #2c3531;
+  left: 110px;
+  top: 160px;
+  display: none;
+}
+.box1:hover .button1{
+  display: block;
+
+}
+.box2:hover .button1{
+  display: block;
+
+}
+.box3:hover .button1{
+  display: block;
+
+}
+.box2{
+  height: 300px;
+  width: 320px;
+  /* border: 2px solid #08a0e9; */
+  position: relative;
+  left: 270px;
+  top: 15px;
+  float: left;
+
+}
+.box3{
+  height: 300px;
+  width: 320px;
+  /* border: 2px solid #08a0e9; */
+  position: relative;
+  left: 305px;
+  top: 15px;
+  float: left;
+}
+.box1 video{
+  width: 320px;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+  border-radius: 30px;
+}
+.box1 p{
+  text-align: center;
+  margin-top: 120px;
+  display: none;
+  position: absolute;
+  color: #D1E8E2;
+  background-color:#2c3531;
+}
+.box1:hover p{
+  display: block;
+}
+.box1:hover video{
+  opacity: 0.3;
+}
+.box2 video{
+  width: 320px;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+  border-radius: 30px;
+}
+.box2 p{
+  text-align: center;
+  margin-top: 120px;
+  display: none;
+  position: absolute;
+  color: #D1E8E2;
+  background-color:#2c3531;
+}
+.box2:hover p{
+  display: block;
+}
+.box2:hover video{
+  opacity: 0.3;
+}
+.box3 video{
+  width: 320px;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+  border-radius: 30px;
+}
+.box3 p{
+  text-align: center;
+  margin-top: 120px;
+  display: none;
+  position: absolute;
+  color: #D1E8E2;
+  background-color:#2c3531;
+}
+.box3:hover p{
+  display: block;
+}
+.box3:hover video{
+  opacity: 0.3;
+}
+.middle{
+  height: 480px;
+  width: 75vw;
+  /* border: 2px solid #FFCB9A; */
+  position: relative;
+  left: 306px;
+  top: 90px;
+  border-radius: 300px;
+}
+.middle video{
+  height: 480px;
+  width: 75vw;
+  border-radius: 30px; 
+  object-fit:cover;
+
+}
+.lower {
+   border: 2px solid #08a0e9;
+   height: 300px;
+   width: 400px;
+   position: relative;
+   left: 320px; 
+   top: 170px;
+   border-radius: 30px;
+
+}
+.lower video{
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.lowertext h1{
+  position: relative;
+  left: 800px;
+  bottom: 100px;
+  color:#D1E8E2;
+  text-decoration:underline;
+
+
+}
+.lowertext h4{
+  position: relative;
+  left: 820px;
+  bottom: 90px;
+  color:#D1E8E2;
+
+}
+.lowertext{
+  width: 500px;
+  height: 200px;
+  /* border: 2px solid black; */
+  position: relative;
+  
+}
+footer{
+ border: 2px solid #2c3531 ;
+ height: 400px;
+ /* background-color:#2c3531; */
+ background:linear-gradient(135deg,#0d0d0d, #1a1a2e) ;
+ 
+}
+::selection{
+background-color: #0d0d0d;
+color: aqua;
+}
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+  <nav class="navtag">
+  <div class="nav">
+    <img src="pictures/My logo.png" class="imglogo" alt="logo">
+    <ul>
+      <li>
+        <a href="">Home</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">About us</a></li>
+    </ul>
+    
+    <a href="https://youtube.com/@wasay._.edits.?si=6B0nSTzAoAmtkc1w"><i class="fa-brands fa-youtube youtube"></i></a>
+    <a href="https://discord.com/"><i class="fa-brands fa-discord discord"></i></a>
+    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook facebook"></i></a>
+    <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter twitter"></i></a>    
+  </div>
+</nav>  
+ <div class="sidebar">
+ <a href="">WaterMarks in Alightmotion</a>
+ <a href="">Topaz Quality in Mobile</a>
+ <a href="">Squid Game Edit in Mobile</a>
+ <a href="">Batman  Edit in Mobile </a>
+ <a href=""> Chishya  Edit in Mobile </a>
+ <a href="">Salesman  Edit  in Mobile</a>
+ <a href="">Life force Edit in Mobile</a>
+ <a href="">Iron Man Edit in Mobile</a>
+ <a href="">Spiderman Edit in Mobile</a>
+ <a href="">Thor Edit in Mobile </a>
+ <a href=""> Wanda Edit in Mobile </a>
+ <a href="">IronMan Death Scene Edit </a>
+ <a href="">Homelander Edit in Mobile</a>
+ <a href="">Captain America Edit</a>
+ <a href="">Frontman pokie Edit</a>
+ <a href="">Amazing spiderman Edit</a>
+ <a href="">Loki Edit in  Mobile</a>
+ <a href="">Thomas shelby EDit</a>
+ <a href="">Spiderman Edit  </a>
+ <a href="">Life force Edit in Mobile</a>
+ <a href="">Iron Man Edit in Mobile</a>
+ <a href="">Spiderman Edit in Mobile</a>
+ <a href="">Thor Edit in Mobile </a>
+ <a href=""> Wanda Edit in Mobile </a>
+ <a href="">IronMan Death Scene Edit </a>
+
+</div>
+<!-- Slidebar end here  -->
+<div class="boxmain">
+<div class="box1">
+  <p>This is a 4k Quality Life force Squid Game Edit Made by Abdul Wasay in Alightmotion</p>
+  <button class="button1">Read more</button>
+
+  <video controls src="Videos/Life Force Edit.mp4"></video>
+</div>
+<div class="box2">
+   <p>This is a 4k Quality Salesman Squid Game Edit Made by Abdul Wasay in Alightmotion</p>
+   <button class="button1">Read more</button>
+
+  <video controls src="Videos/SalesMan Edit.mp4"></video></div>
+<div class="box3">
+  <p>This is a 4k Quality Batman superman Edit Made by Abdul Wasay in Alightmotion</p>
+  <button class="button1">Read more</button>
+
+  <video controls src="Videos/Batman Edit.mp4"></video>
+</div>
+
+</div>
+<div class="middle">
+  <video controls src="Videos/Quality Tutorial.mp4" poster="pictures/THUMBNAIL 3 Vegeta.png"></video>
+ 
+
+</div>
+<div class="lower">
+  <video controls src="Videos/trio Edit.mp4"></video>
+</div>
+<div class="lowertext">
+  <h1>Alightmotion Edit by Abdul Wasay</h1>
+  <h4>"In this Edit there are three famous Marvel characters number one is Tony <br> Stark aka Ironman and the second 
+    character is Natasha aka Black widow <br> and last but not the least our hero Captain America the song 
+    use in this video is very smooth and relaxing and the Qualityof the video is also best you can find other 
+    these type of Videos in My channel Wasay._.Edits"</h4>
+</div>
+<footer>
+<p>
+  And with that my  website comes to an End I hope your all are  
+</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
