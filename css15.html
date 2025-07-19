@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    .main{
+        width: 800px;
+        height: 600px;
+        background-color: cadetblue;
+        margin-left: 300px;
+        margin-top: 50px;
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: flex-start;
+       align-items: flex-start;
+       gap: 20px;
+       justify-content: space-evenly;
+             
+
+       
+    }
+    
+    .box1{
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: space-around;
+       
+
+       
+        
+    }
+
+     .box2{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(43, 220, 226);
+    }
+  .box3{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(73, 226, 43);
+    }
+     .box4{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(226, 192, 43);
+    } 
+     .box5{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(202, 129, 18);
+    } 
+    .box6{
+         width: 200px;
+        height: 200px;
+        background-color: rgb(214, 13, 197);
+    }
+    img{
+         width: 200px;
+        height: 200px;
+        object-fit: cover; 
+    }
+    .main:hover img{
+        filter: blur(5px);
+    }
+   .main img:hover{
+         filter: blur(0);
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="box1"><img src="pictures/berlin.jpeg" alt=""></div>
+        <div class="box2"><img src="pictures/6-Underground.avif" alt=""></div>
+        <div class="box3"><img src="pictures/Money hiest.jpg" alt=""></div>
+        <div class="box4"><img src="pictures/moon knight.jpeg" alt=""></div>
+        <div class="box5"><img src="pictures/spiderman.jpg" alt=""></div>
+        <div class="box6"><img src="pictures/Money hiest.jpg" alt=""></div>
+
+    </div>
+</body>
+</html>
