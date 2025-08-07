@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        width: 800px;
+        height: 800px;
+        border: 10px solid sandybrown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(10, 124, 218);
+        position: relative;
+
+        
+    }
+    .main img{
+        width: 400px;
+        height: 400px;
+        
+       
+        
+    }
+    .smoke{
+        width: 160px;
+        height: 15px;
+        background-color: #F5F5F5;
+        position: absolute;
+        bottom: 450px;
+        left: 280px;
+        border-radius: 10px;
+        transform: translateY(0) scale(1);
+         transition: transform 1.5s cubic-bezier(0.34, 0.68, 0.67, 0.2), opacity 1.5s cubic-bezier(0, 0.79, 0.99, 0.53);
+        }
+    .main:hover .smoke{
+       
+       transform: translateY(-80px)  scale(1.5); 
+        opacity: 0;
+       
+        
+        
+    }
+    .smoke1{
+        transition-delay: 0s;
+       
+    }
+    .smoke2{
+        transition-delay: 0.5s;
+        
+    }
+    .smoke3{
+        transition-delay: 1s;
+        
+    }
+</style>
+<body>
+    <div class="main">
+        <img src="pictures/cup img.png" alt="">
+        <div class="smoke smoke1"></div>
+        <div class="smoke smoke2"></div>
+        <div class="smoke smoke3"></div>
+    </div>
+</body>
+</html>
