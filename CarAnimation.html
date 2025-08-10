@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .mian{
+        display: flex;
+        justify-content: center;
+       margin-top: 200px;
+    }
+    .road img{
+         height: 500px;
+
+        
+        }
+        .car img{
+            position: absolute;
+            top: 300px;
+            left: 700px;
+            animation: carmove 6s linear  infinite ;
+             z-index: 1;
+        }
+
+     @keyframes carmove {
+        from{
+            left: 700px;
+        }
+        to{
+            left: 500px;
+        }
+     }
+
+     @keyframes tyrerotete {
+        from{
+             rotate: 0deg;
+        }
+        to{
+            rotate: 360deg;
+        }
+     }
+
+      /* .tyre{
+        width: 100px;
+        height: 100px;
+        background-color:rgb(211, 199, 199);
+        border: 5px solid rgb(10, 10, 10);
+        border-radius:50%;
+         position: absolute;
+        top: 610px;    
+         left: 780px;} */
+         /* animation: tyrerotete 4s linear  infinite ;
+        */
+      
+    .tyre img{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 790px;
+        top: 580px;
+        background-color: snow;
+        border-radius: 50px;
+         /* animation: tyrerotete 4s linear  infinite ; */
+         z-index: 2;
+          animation: tyremove 6s linear  infinite,tyrerotete 4s linear  infinite ;
+       
+    }
+      .secondtyre img{
+         width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 980px;
+        top: 580px;
+        background-color: snow;
+        border-radius: 50px;
+        z-index: 2;
+            margin-left: 237px;
+          animation: tyremove 6s linear infinite, tyrerotete 4s linear infinite;
+      
+     }
+
+     
+@keyframes tyremove{
+        from{
+            left: 790px;
+        }
+        to{
+            left: 590px;
+        }
+     }
+   
+      
+</style>
+<body>
+    <div class="mian">
+        <div class="road">
+            <img src="https://i.makeagif.com/media/4-01-2024/VQr9bW.gif" alt="Animated road background">
+
+            <!-- The .car div now acts as a single unit containing the car body and both tires -->
+            <div class="car">
+                <!-- Added a class 'car-body-image' to the car's main image -->
+                <img class="car-body-image" src="pictures/no_car.png" alt="Car body">
+
+                <!-- Front tire container and image -->
+                <div class="tyre">
+                    <img src="pictures/emoji haap.png" alt="Front tire">
+                </div>
+
+                <!-- Back tire container and image - moved inside the .car div -->
+                <div class="secondtyre">
+                    <img src="pictures/emoji haap.png" alt="Back tire">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
